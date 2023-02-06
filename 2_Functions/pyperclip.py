@@ -1,1 +1,0 @@
-import pyperclip #pip tool
