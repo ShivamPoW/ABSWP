@@ -3,6 +3,8 @@ import re
 # phoneRegex = re.compile(r'(\d){3}-(\d){3}-(\d){3}')
 chainRegex = re.compile(r'chain')
 CPURegex = re.compile(r'(CPU) (power)')
+grpsRegex = re.compile(r'((CPU) (power))')
+
 whitepaper = '''Abstract. A purely peer-to-peer version of electronic cash would allow online
 payments to be sent directly from one party to another without going through a
 financial institution. Digital signatures provide part of the solution, but the main
@@ -18,5 +20,6 @@ network itself requires minimal structure. Messages are broadcast on a best effo
 basis, and nodes can leave and rejoin the network at will, accepting the longest
 proof-of-work chain as proof of what happened while they were gone.'''
 
-print(chainRegex.findall(whitepaper))
-print(CPURegex.findall(whitepaper))  # returns tuples of grp
+print(chainRegex.findall(whitepaper)) # Returns list
+print(CPURegex.findall(whitepaper))   # Returns list of tuples of grp
+print(grpsRegex.findall(whitepaper))  # Same as above + hierarchy
