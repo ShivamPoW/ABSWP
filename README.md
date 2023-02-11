@@ -5,4 +5,4 @@
 Basic Programs: 
   - [Guess game](3_Error_&_Program/guess.py)
   - [Alphabet Counting](5_Dictionaries/letterCounting.py)
-  - [Regular Expressions](7_Regex)
+  - [Phone-Email Scrapper](/7_Regex/Project) | [Regular Expressions](7_Regex)
